@@ -7,6 +7,7 @@ class Recipe < ActiveRecord::Base
   validates :description, presence: true, length: { minimum: 20, maximum: 500 }
   mount_uploader :picture, PictureUploader
   validate :picture_size
+  default_scope -> { order(updated_at: :desc) }
   
   def thumbs_up_total
     self.likes.where(like: true).size
