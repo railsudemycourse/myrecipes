@@ -1,10 +1,17 @@
-Authentication updates:
+Add Review Feature to myrecipes app
 
-1) Show recipe page -> Ability to edit/update only own recipe
-2) Navigation partial -> Toggle Menu, restrict new
-3) Restrict thumbs up and thumbs down action to logged_in users only
-4) Recipe - update to current_user
-5) Like - update to current_user
-6) Before_action :require_user, except: [:show, :index]
-7) Before_action :require_same_user for chefs, only: [:edit, :update]
+1) You'll need to create migration and create reviews table.
+text :body
+chef_id :integer
+recipe_id :integer
+2) Reviews model
+3) Create tests
+4) Build the associations to chefs and recipes
+5) Test out in Rails Console
+6) How to enter in the reviews. Show Recipe page.
+7) reviews controller create action. New and Create action. 
+8) Remember to associate to chefs and recipes.
+9) Require user
+10) Check out current model backed forms from recipe.
+11) 
 
