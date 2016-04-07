@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 ruby '2.1.4'
-gem 'rails', '4.1.6'
+gem 'rails', '~> 4.1.14'
 gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass', '~> 3.3.1'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 2.7.2'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.1.3'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
@@ -31,3 +31,4 @@ end
 
 
 
+gem 'nokogiri', '>= 1.6.7.2'
